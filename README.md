@@ -23,12 +23,15 @@ Web画面でデータ確認も可能です。
 * Chart.js
 
 ## Files
+* init_db.py：データを保存するsensor.dbを作成
 * server.py : データ受信サーバ
 * client.py : 疑似センサ送信
+* api_server.py：FastAPIを起動
 
 ## How to Run（起動方法）
 ```bash id="e7u0ya"
+python init_db.py
 python server.py
 python client.py
-uvicorn dashboard:app --reload
+uvicorn api_server:app --reload
 ```
