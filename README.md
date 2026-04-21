@@ -2,16 +2,16 @@
 Python + FastAPI + SQLite によるIoT監視システムです。
 センサデータを取得し、グラフ表示・外部公開しています。
 ## Overview（概要）
-環境センサ
-   ↓
-client.py（取得・送信）
-   ↓ Socket通信
-server.py（受信・DB保存）
-   ↓ SQLite
-FastAPI（APIサーバ）
-   ↓
-Chart.js（Webダッシュボード）
-   ↓
+環境センサ  
+   ↓  
+client.py（取得・送信）  
+   ↓ Socket通信  
+server.py（受信・DB保存）  
+   ↓ SQLite  
+FastAPI（APIサーバ）  
+   ↓  
+Chart.js（Webダッシュボード）  
+   ↓  
 Cloudflare Tunnel（外部公開）  
 
 ## Live Demo ＆ Screenshot
