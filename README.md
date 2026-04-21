@@ -28,13 +28,27 @@ URL：https://web.naoki-iot.xyz
 ## Tech Stack（使用技術）
 * Python
 * FastAPI
+* Uvicorn
 * SQLite
 * Cloudflare Tunnel
 * HTML/CSS/JavaScript
 * Chart.js
 
-## Files
+## Files（プログラム）
 * init_db.py：データを保存するsensor.dbを作成
 * server.py : データ受信サーバ
 * client.py : 疑似センサ送信
 * api_server.py：FastAPIを起動
+
+## How to Run（実行手順）
+1.仮想空間作成  
+* python -m venv myenv
+2.仮想環境有効化  
+* source myenv/bin/activate (Linux / Mac)  
+* myenv\Scripts\activate (Windows)  
+3.データ受信サーバ起動  
+* python server.py  
+4.センサ送信クライアント起動
+* python client.py  
+5.Webダッシュボード起動  
+* uvicorn api_server:app --host 0.0.0.0 --port 8000
