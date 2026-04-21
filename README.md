@@ -1,7 +1,7 @@
 # iot-sensor-dashboard
 Raspberry Pi と環境センサを用いて取得した温度・湿度データを、Pythonで収集・保存し、
 Webブラウザ上でリアルタイム可視化する IoT ダッシュボードです。
-外部ネットワークからも安全にアクセスできるよう、Cloudflare Tunnel を利用して公開しています。
+外部ネットワークからも安全にアクセスできるよう(ポート開放不要)、Cloudflare Tunnel を利用して公開しています。
 
 ## Overview（概要）
 環境センサ  
