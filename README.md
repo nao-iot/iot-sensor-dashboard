@@ -1,6 +1,8 @@
 # iot-sensor-dashboard
-Python + FastAPI + SQLite によるIoT監視システムです。
-センサデータを取得し、グラフ表示・外部公開しています。
+Raspberry Pi と環境センサを用いて取得した温度・湿度データを、Pythonで収集・保存し、
+Webブラウザ上でリアルタイム可視化する IoT ダッシュボードです。
+外部ネットワークからも安全にアクセスできるよう、Cloudflare Tunnel を利用して公開しています。
+
 ## Overview（概要）
 環境センサ  
    ↓  
