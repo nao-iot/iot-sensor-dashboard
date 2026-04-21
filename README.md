@@ -40,15 +40,29 @@ URL：https://web.naoki-iot.xyz
 * client.py : 疑似センサ送信
 * api_server.py：FastAPIを起動
 
-## How to Run（実行手順）
-1.仮想空間作成  
-python -m venv myenv  
-2.仮想環境有効化  
-source myenv/bin/activate (Linux / Mac)    
-myenv\Scripts\activate (Windows)  
-3.データ受信サーバ起動  
-python server.py  
-4.センサ送信クライアント起動  
-python client.py  
-5.Webダッシュボード起動  
+## Setup（起動方法）
+### 1. 仮想環境を作成
+```bash
+python -m venv myenv
+```
+### 2. 仮想環境を有効化
+#### Linux / Mac
+```bash
+source myenv/bin/activate
+```
+#### Windows
+```bash
+myenv\Scripts\activate
+```
+### 3. データ受信サーバを起動
+```bash
+python server.py
+```
+### 4. センサ送信クライアントを起動
+```bash
+python client.py
+```
+### 5. Webダッシュボードを起動
+```bash
 uvicorn api_server:app --host 0.0.0.0 --port 8000
+```
