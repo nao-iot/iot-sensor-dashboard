@@ -1,8 +1,17 @@
 # iot-sensor-dashboard
+クライアントから温湿度データを送信し、サーバで受信してSQLiteへ保存、Webブラウザ上でリアルタイム可視化する IoT ダッシュボードです。外部ネットワークからも安全にアクセスできるよう、Cloudflare Tunnel を利用して公開しています。
 ## Overview（概要）
-Pythonで作成したIoTセンサ監視システムです。
-クライアントから温湿度データを送信し、サーバで受信してSQLiteへ保存します。
-Web画面でデータ確認も可能です。
+環境センサ
+↓
+client.py（センサ取得・送信）
+↓ Socket通信 
+server.py（受信・DB保存）
+↓ SQLite 
+FastAPI（APIサーバ） 
+↓ 
+Chart.js（Webダッシュボード） 
+↓ 
+Cloudflare Tunnel（外部公開）
 
 ## Features（機能）
 * Socket通信
