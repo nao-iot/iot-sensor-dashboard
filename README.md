@@ -34,6 +34,9 @@ URL：https://web.naoki-iot.xyz
 * HTML/CSS/JavaScript
 * Chart.js
 
+## Install
+* pip install -r requirements.txt
+
 ## Files（プログラム）
 * init_db.py：データを保存するsensor.dbを作成
 * server.py : データ受信サーバ
