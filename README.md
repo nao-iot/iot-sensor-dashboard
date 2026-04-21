@@ -42,13 +42,13 @@ URL：https://web.naoki-iot.xyz
 
 ## How to Run（実行手順）
 1.仮想空間作成  
-* python -m venv myenv
+python -m venv myenv  
 2.仮想環境有効化  
-* source myenv/bin/activate (Linux / Mac)  
-* myenv\Scripts\activate (Windows)  
+source myenv/bin/activate (Linux / Mac)    
+myenv\Scripts\activate (Windows)  
 3.データ受信サーバ起動  
-* python server.py  
-4.センサ送信クライアント起動
-* python client.py  
+python server.py  
+4.センサ送信クライアント起動  
+python client.py  
 5.Webダッシュボード起動  
-* uvicorn api_server:app --host 0.0.0.0 --port 8000
+uvicorn api_server:app --host 0.0.0.0 --port 8000
