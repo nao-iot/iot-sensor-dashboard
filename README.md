@@ -16,6 +16,8 @@ Cloudflare Tunnel（外部公開）
 
 ## Live Demo ＆ Screenshot
 URL：https://web.naoki-iot.xyz
+<img width="1892" height="935" alt="dashboard" src="https://github.com/user-attachments/assets/97231bf9-9e99-46bc-ac68-c6dc83b490c7" />
+
 ## Features（機能）
 * 温湿度監視
 * グラフ表示
