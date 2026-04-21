@@ -24,7 +24,6 @@ URL：https://web.naoki-iot.xyz
 * 温湿度監視
 * グラフ表示
 * 自動更新
-* Cloudflare Tunnel公開
 * Cloudflare Tunnel外部公開
 
 ## Tech Stack（使用技術）
